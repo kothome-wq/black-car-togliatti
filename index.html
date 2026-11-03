@@ -19,6 +19,7 @@
 :root { --c-canvas: #0c0d0f; --c-surface: #17191c; --c-ink: #f1f2f4; --c-ink-soft: #9ba1a9; --c-accent: #d3dae1; --c-accent-ink: #0c0d0f; --c-accent-deep: #d3dae1; --f-display: "Rubik", "Arial", system-ui, sans-serif; --f-text: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif; --h1k: 1; }
 </style>
 <link rel="stylesheet" href="style-prod.css">
+<style>/* karta */ .s-map{margin-top:24px;display:grid;gap:14px}.s-map h3{margin:0;font-size:1.15rem}.s-map__frame{position:relative;border-radius:var(--r);overflow:hidden;border:1px solid var(--hair);background:var(--tint);aspect-ratio:16/7}.s-map__frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}.s-map__actions{display:flex;flex-wrap:wrap;gap:10px}@media (max-width:640px){.s-map__frame{aspect-ratio:4/3}.s-map__actions .s-btn{flex:1 1 100%;text-align:center}}</style>
 </head>
 <body class="s-prod" id="top" data-wa="" data-tg="blackcartlt" data-max="">
 <header class="s-bar" data-s-bar>
@@ -128,6 +129,16 @@
         <a class="s-btn s-btn--ghost" data-s-msg="telegram" href="#">ВКонтакте</a>
       </div>
     </div>
+    <!-- karta -->
+    <div class="s-map">
+      <h3>Как проехать</h3>
+      <div class="s-map__frame"><iframe src="https://yandex.ru/map-widget/v1/?ll=49.394878%2C53.538148&z=16&pt=49.394878%2C53.538148%2Cpm2rdl" title="Карта: как проехать" loading="lazy" allowfullscreen></iframe></div>
+      <div class="s-map__actions">
+        <a class="s-btn s-btn--ghost" href="https://yandex.ru/maps/?rtext=~53.538148%2C49.394878&rtt=auto" target="_blank" rel="noopener">Маршрут в Яндекс Картах</a>
+        <a class="s-btn s-btn--ghost" href="https://2gis.ru/togliatti/firm/70000001100063088" target="_blank" rel="noopener">Открыть в 2ГИС</a>
+      </div>
+    </div>
+    <!-- /karta -->
   </section>
 </main>
 <footer class="s-foot"><p>Black Car · Тольятти</p><p>Оклейка плёнкой, восстановление фар, автозвук, тюнинг</p></footer>
